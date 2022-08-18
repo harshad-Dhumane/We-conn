@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">We-conn</string>
+    <string name="user_name_here">harshad_dhumane1105</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="reel">Reel</string>
+    <string name="notification">Notification</string>
+    <string name="profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="here_is_my_caption">here is my caption</string>
+    <string name="loading">loading</string>
+    <string name="post">Post</string>
+</resources>

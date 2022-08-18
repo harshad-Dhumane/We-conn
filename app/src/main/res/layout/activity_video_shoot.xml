@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.VideoShootActivity"
+    android:background="@color/cream">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_select"
+        android:layout_margin="15dp"
+        android:textAllCaps="false"
+        android:text="Select Video"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_takeVideo"
+        android:layout_margin="15dp"
+        android:textAllCaps="false"
+        android:text="Shoot Video"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/idverticalVideoLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:visibility="gone">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:fitsSystemWindows="true">
+
+                <VideoView
+                    android:id="@+id/video_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_gravity="center"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+            <EditText
+                android:id="@+id/idCaptionVideoET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:maxLines="3"
+                android:hint="Caption"
+
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt_UploadVideo"
+                android:layout_margin="15dp"
+                android:textAllCaps="false"
+                android:text="Upload Video Post"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

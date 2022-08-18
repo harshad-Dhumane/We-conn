@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/idAddPosts"
+        android:icon="@drawable/ic_home"
+        android:title="@string/post" />
+    <item
+        android:id="@+id/idAddReel"
+        android:icon="@drawable/ic_reel"
+        android:title="@string/reel" />
+
+<!--    <item-->
+<!--        android:id="@+id/idAddStory"-->
+<!--        android:icon="@drawable/ic_baseline_search_24"-->
+<!--        android:title="@string/story" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/idGoLive"-->
+<!--        android:icon="@drawable/ic_favorite"-->
+<!--        android:title="@string/live" />-->
+</menu>

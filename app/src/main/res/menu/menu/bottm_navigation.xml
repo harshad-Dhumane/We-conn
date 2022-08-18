@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/idBtmNaviHome"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home"/>
+
+    <item
+        android:id="@+id/idBtmNaviSearch"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="@string/search" />
+    <item
+        android:id="@+id/idBtmNaviReel"
+        android:icon="@drawable/ic_reels"
+        android:title="@string/reel" />
+    <item
+        android:id="@+id/idBtmNaviFav"
+        android:icon="@drawable/ic_favorite"
+        android:title="@string/favorate" />
+    <item
+        android:id="@+id/idBtmNaviProfile"
+        android:icon="@drawable/ic_account_circle"
+        android:title="@string/profile" />
+</menu>

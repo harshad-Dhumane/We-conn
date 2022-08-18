@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragmets.FirstFragment"
+    android:background="@color/cream">
+
+    <ProgressBar
+        android:id="@+id/progressBarGridView"
+        android:theme="@style/whiteAccent"
+        android:layout_marginTop="150dp"
+        android:visibility="gone"
+        android:elevation="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="44dp"
+        android:layout_height="44dp"/>
+
+    <!-- TODO: Update blank fragment layout -->
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:verticalSpacing="0dp"
+        android:horizontalSpacing="0dp"
+        android:gravity="center"
+        />
+
+</FrameLayout>

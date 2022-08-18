@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/backButtonSearch"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:focusable="true"
+            android:visibility="gone"
+            android:src="@drawable/ic_arrowback"
+            android:padding="4dp" />
+
+        <LinearLayout
+            android:id="@+id/idRandomSV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/searchback"
+            android:layout_marginVertical="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="4dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:weightSum="4">
+
+            <ImageView
+                android:id="@+id/idIVsearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:focusable="true"
+                android:padding="4dp"
+                android:src="@drawable/ic_baseline_search_24" />
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="3.5"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="Search People"
+                android:cursorVisible="true"
+                android:padding="8dp"
+                android:focusableInTouchMode="false"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRandomPostRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linearLayout2" />
+    <ProgressBar
+        android:id="@+id/idRP_PB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

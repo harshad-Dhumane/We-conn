@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/cream">
+
+    <LinearLayout
+        android:id="@+id/LLChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="14dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileImageIV"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:src="@drawable/profile_image"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="2dp" />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/receiverNameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LLChat2"
+        android:layout_below="@+id/LLChat"
+        android:layout_marginHorizontal="14dp" />
+
+    <LinearLayout
+        android:id="@+id/LLChat2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="14sp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/messageCardView"
+            app:cardBackgroundColor="#A1E88A76"
+            android:layout_weight="1"
+            android:layout_margin="3sp"
+            app:cardCornerRadius="540sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editTextMssg"
+                android:hint="Type Your Messages.."
+                android:layout_width="match_parent"
+                android:layout_gravity="center_vertical"
+                android:paddingVertical="10sp"
+                android:paddingStart="16sp"
+                android:background="@null"
+                android:layout_height="wrap_content"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sendBtnCardView"
+            app:cardBackgroundColor="@color/baby_color"
+            android:layout_margin="3sp"
+            app:cardCornerRadius="540sp"
+            android:layout_width="45sp"
+            android:layout_height="45sp">
+
+            <ImageView
+                android:id="@+id/sendBtnIV"
+                android:layout_margin="12dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/send_btn"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</RelativeLayout>
